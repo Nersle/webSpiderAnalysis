@@ -1,0 +1,272 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>互联网**爬虫分析系统</title>
+	<link rel="stylesheet" href="css/common.css"/>
+    <link rel="shortcut icon" href="images/favicon.ico"> 
+	<link rel="stylesheet" type="text/css" href="js/mjs/jquery.jqplot.min.css" />
+	<link href="css/tablecloth.css" rel="stylesheet" type="text/css" media="screen" />
+	
+</head>
+<body>
+	<div id="wrapper">
+		<div class="skinBg" style="background-image: url('images/65.jpg');"></div>
+		<header id="header">
+		
+	  <nav class="headNavs fr tr">
+				<a href="#"><span class="s-icon s-icon-treasure"></span><span>登陆</span></a> 
+				<a href="#"><span class="s-icon s-icon-msg"></span><span>帮助</span></a>
+				<a><span class="s-icon s-icon-line"></span></a>
+				<a href="#"><span>设为首页</span></a>
+				<a href="javascript:;" class="uname"><span>个人设置</span><span class="user-arrow"></span></a>
+				<div class="topMenus dn">
+					<span class="arrowTop"></span> 
+					<a href="#">安全退出</a>
+				</div>
+			</nav>
+		</header>
+		<div class="content tc">
+			<p class="logo">&nbsp;</p>
+			<p class="logo">&nbsp;</p>
+			<p class="logo" align="center"><img src="images/logo_white2.png" alt="logo" width="400" height="80" vspace="50" /></p>
+			<nav class="mainNavs">
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p align="center">
+                  <a href="#">综&nbsp;&nbsp;合</a>
+				  <a href="#">人&nbsp;&nbsp;物</a>
+				  <a href="#">博&nbsp;&nbsp;客</a>
+				  <a href="#">微&nbsp;&nbsp;博</a>
+				  <a href="#">论&nbsp;&nbsp;坛</a>
+				  <a href="#">新&nbsp;&nbsp;闻</a>
+                  <a href="#">社交网络</a>
+				 </p>
+          </nav>
+			<div class="searchBox" >
+				<form action=""  valign="middle">
+					<input type="text" class="searchIpt f14" name="wd" maxlength="80" autocomplete="off" style="margin-top:2px;"   placeholder="请输入搜索内容"/>
+					<input type="submit" class="btn cp" value="搜索" style="margin-top:6px; height: 41px;margin-left: -4px;" />
+				</form>
+    </div>
+			<div class="mainContents oh">
+				<div class="menusWrapper fl">
+					<a class="active" href="javascript:;">事件摘要</a>
+					<a href="javascript:;">溯源分析</a>
+					<a href="javascript:;">相关人物</a>
+					<a class="rd" href="javascript:;">热度分析</a>
+					
+				</div>
+				<div class="ctnerWrapper" >
+					<div class="ctnerBox" top="0px">
+						<div id="cbox-1" class="cbox tl dn">
+							<div class="topic1">
+           		    				<iframe src="abstract_text.html" width="550" height="314" > 
+                                        <a href="abstract_text.html">你的浏览器不支持iframe页面嵌套，请点击这里访问页面内容。</a> 
+                                    </iframe> 
+							</div>
+							<div class="sliderBox fl">
+									<div class="slider">
+										<span href="#" target="_blank" class="picTitle">**来源分布</span>
+                                                <canvas id="chartCanvas1" width="250" height="318">
+                                                    Your web-browser does not support the HTML 5 canvas element.
+                                                </canvas>
+								      
+                            		</div>
+                            </div>
+							
+                       </div> 
+						
+			<div id="cbox-3" class="cbox tl dn findRootBox">
+						<div class="findRootTop">
+							<div class="findListBox">
+								<div class="findcontent">	
+									<div class="findeContentTop">
+										<h4>天涯论坛</h4>
+										<div class="findeContentTopContent">2014.5.13最先出现在天涯论坛</div>
+									</div>
+									<div class="findeContentBottom">
+										<img src="images/dot.png">
+										<div class="timeLineTime">2014.5.15</div>
+									</div>
+								</div> 
+								<div class="findSeperator">
+									<img src="images/seperator.png" >
+								</div>
+								<div class="findcontent">	
+									<div class="findeContentTop">
+										<h4>新浪微博</h4>
+										<div class="findeContentTopContent">2014.5.14新浪微博开始疯传</div>
+									</div>
+									<div class="findeContentBottom">
+										<img src="images/dot.png">
+										<div class="timeLineTime">2014.5.15</div>
+									</div>
+								</div> 
+								<div class="findSeperator">
+									<img src="images/seperator.png" >
+								</div>
+								<div class="findcontent">	
+									<div class="findeContentTop">
+										<h4>网易新闻</h4>
+										<div class="findeContentTopContent">2014.5.15出现于网易新闻</div>
+									</div>
+									<div class="findeContentBottom">
+										<img src="images/dot.png">
+										<div class="timeLineTime">2014.5.15</div>
+									</div>
+								</div> 
+								<div class="findSeperator">
+									<img src="images/seperator.png" >
+								</div>
+								<div class="findcontent">		
+									<div class="findeContentTop">
+										<h4>G+</h4>
+										<div class="findeContentTopContent">2014.5.15G+开始出现相关报道</div>
+									</div>
+									<div class="findeContentBottom">
+										<img src="images/dot.png">
+										<div class="timeLineTime">2014.5.15</div>
+									</div>
+								</div> 
+								<div class="findSeperator">
+									<img src="images/seperator.png" >
+								</div>
+								<div class="findcontent">		
+									<div class="findeContentTop">
+										<h4>Facebook</h4>
+										<div class="findeContentTopContent">2014.5.15FaceBook开始出现相关报道</div>
+									</div>
+									<div class="findeContentBottom">
+										<img src="images/dot.png">
+										<div class="timeLineTime">2014.5.15</div>
+									</div>
+								</div> 
+
+							</div> 
+							<br>
+						<div class="findRootBottom">
+							<h2>马航MH17事件发展脉络</h2>
+						</div>
+						</div>
+
+						</div>
+						<div id="cbox-4" class="cbox tl dn"> 
+							<div class="listPerson">
+
+							<h2>马航MH17事件发展脉络</h2>
+								<table class="listPersonTable">
+									<tr><th>昵&nbsp;&nbsp;称</th> 
+										<th>邮&nbsp;&nbsp;&nbsp;&nbsp;箱</th>
+										<th>活跃地点</th>
+										<th>活跃地点</th>
+										<th>活跃地点</th>
+										<th>活跃地点</th>
+										<th>活跃地点</th>
+										<th>操作</th>
+									</tr>
+									<tr>
+										<td>拉灯</td>
+										<td>ladeng@gmail.com</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td><a href="#">查看</a></td>
+									</tr>
+									<tr>
+										<td>拉灯</td>
+										<td>ladeng@gmail.com</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td>Google</td> 
+										<td><a href="#">查看</a>
+										</td>
+									</tr>
+									<tr>
+										<td>拉灯</td>
+										<td>ladeng@gmail.com</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td>Google</td> 
+										<td><a href="#">查看</a>
+										</td>
+									</tr>
+									<tr>
+										<td>拉灯</td>
+										<td>ladeng@gmail.com</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td>Google</td>										
+										<td><a href="#">查看</a>
+										</td>
+									</tr>
+									<tr>
+										<td>拉灯</td>
+										<td>ladeng@gmail.com</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td>Google</td>
+										<td>Google</td>										
+										<td><a href="#">查看</a>
+										</td>
+									</tr>
+
+								</table>
+
+							</div>
+						</div>
+						<div id="cbox-2" class="cbox tl dn cbox2Control" align="middle" >	
+						<!--by X-->
+						<div id="title1" class="cboxTitle"   > 热度趋势 </div>
+						<div id="title1"  class="cboxTitle" ><font color=#0000ff> 点击頻数</font></div>
+						<div id="chart1" style="width:350px; height:280px ;float:left;margin:0px 10px 10px 20px"></div>
+						<div id="chart2" style="width:350px; height:280px; float:left;margin:0px 0px 10px 10px"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p>
+		  <footer id="footer" class="tc myfooter">
+      <blockquote>
+		      <p>©2014 互联网**爬虫分析系统&nbsp;&nbsp;&nbsp;&nbsp;联系我们&nbsp;&nbsp;&nbsp;&nbsp;湘ICP备09019772</p>
+	        </blockquote>
+		  </footer>
+	  </p>
+
+		
+		            <blockquote>
+		              <p align="center"> 
+                      <img src="images/partners/gfkd.png" alt=""  width="150" height="95" >
+                      <img src="images/partners/fenghuo.PNG" alt=""  width="150" height="95" >
+                      <img src="images/partners/ruian.PNG" alt=""  width="150" height="95" >
+                      <img src="images/partners/meiya.PNG" alt=""  width="150"height="95" >
+                      <img src="images/partners/shjd.PNG" alt="" width="150" height="95"> </p>
+	                </blockquote>
+	         
+	</div>
+     
+    <script type="application/javascript" src="js/awesomechart.js"> </script>
+    <script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/mjs/jquery.jqplot.min.js"></script>
+	<script type="text/javascript" src="js/mjs/jqplot.barRenderer.min.js"></script>
+	<script type="text/javascript" src="js/mjs/jqplot.highlighter.min.js"></script>
+	<script type="text/javascript" src="js/mjs/jqplot.cursor.min.js"></script>
+	<script type="text/javascript" src="js/mjs/jqplot.pointLabels.min.js"></script>
+	<script type="text/javascript" src="js/mjs/jqplot.categoryAxisRenderer.min.js"></script>
+	<script type="text/javascript" src="js/tablecloth.js"></script> 
+	<script type="text/javascript" src="js/deal.js"></script> 
+ 		       
+	
+
+</body>
+</html>
